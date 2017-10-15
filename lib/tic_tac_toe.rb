@@ -135,10 +135,10 @@ def winner(board)
   if !(won?(board))
     return nil
   elsif board[won?(board)[0]] == "X"
-    const won = "X"
+    $winn = "X"
     return "X"
   else board[won?(board)[0]] == "O"
-    const won = "O"
+    $winn = "O"
     return "O"
   end
 end
@@ -152,9 +152,9 @@ def play(board)
     end
 
     if won?(board) != false
-      if won = "X"
+      if winn = "X"
         puts "Congratulations X!"
-      else won = "O"
+      else winn = "O"
         puts "Congratulations O!"
       end
     elsif draw?(board)
