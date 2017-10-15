@@ -145,4 +145,6 @@ def play(board)
   turn(board)
     if over?(board) == true
       puts "Game Over winner is #{winner(board)}"
+    else
+      play(board)
 end
