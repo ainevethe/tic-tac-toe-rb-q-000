@@ -135,8 +135,10 @@ def winner(board)
   if !(won?(board))
     return nil
   elsif board[won?(board)[0]] == "X"
+    won = "X"
     return "X!"
   else board[won?(board)[0]] == "O"
+    won = "O"
     return "O"
   end
 end
@@ -150,7 +152,10 @@ def play(board)
     end
 
     if won?(board) != false
-      puts "Congratulations #{winner(board[0])}!"
+      if won = "O"
+        puts "Congratulations #{winner(board[0])}X!"
+      else
+        puts "Congratulations #{winner(board[0])}O!""
     elsif draw?(board)
       puts "Cat's Game!"
     end
