@@ -147,4 +147,5 @@ def play(board)
       puts "Game Over winner is #{winner(board)}"
     else
       play(board)
+    end
 end
