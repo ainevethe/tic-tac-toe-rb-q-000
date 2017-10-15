@@ -152,7 +152,7 @@ def play(board)
     end
 
     if won?(board) != false
-      if won = "O"
+      if won = "X"
         puts "Congratulations #{winner(board[0])}X!"
       else
         puts "Congratulations #{winner(board[0])}O!"
