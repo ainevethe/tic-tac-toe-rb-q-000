@@ -135,7 +135,7 @@ def winner(board)
   if !(won?(board))
     return nil
   elsif board[won?(board)[0]] == "X"
-    return "Congratulations X!"
+    return "X!"
   else board[won?(board)[0]] == "O"
     return "O"
   end
