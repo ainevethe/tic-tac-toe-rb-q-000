@@ -143,7 +143,7 @@ end
 
 def play(board)
   turns = 0
-    until over?(board) == true || won?(board) != false || draw?(board) == true
+    until over?(board) == true || won?(board) == true || draw?(board) == true
       turn(board)
       turns += 1
     end
