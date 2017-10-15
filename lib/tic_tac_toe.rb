@@ -136,7 +136,7 @@ def winner(board)
     return nil
   elsif board[won?(board)[0]] == "X"
     won = "X"
-    return "X!"
+    return "X"
   else board[won?(board)[0]] == "O"
     won = "O"
     return "O"
