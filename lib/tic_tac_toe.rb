@@ -146,11 +146,12 @@ end
 
 def play(board)
   turns = 0
-    until over?(board) == true || won?(board) == true || draw?(board) == true
-      turn(board)
-      turns += 1
+    until won?(board) == true
+      until over?(board) == true || won?(board) == true || draw?(board) == true
+        turn(board)
+        turns += 1
+      end
     end
-
     if won?(board) != false
       if board[won?(board)[0]] == "X"
         puts "Congratulations X!"
