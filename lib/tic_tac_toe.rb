@@ -160,8 +160,4 @@ def play(board)
     else draw?(board)
       puts "Cat's Game!"
     end
-
-  if won?(board) == true
-    play(board)
-  end
 end
