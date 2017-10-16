@@ -160,6 +160,5 @@ def play(board)
       puts "Cat's Game!"
     end
     if won?(board)
-      break
     end
 end
