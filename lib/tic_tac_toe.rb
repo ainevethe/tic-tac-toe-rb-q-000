@@ -161,4 +161,5 @@ def play(board)
     end
     if won?(board)
       break
+    end
 end
