@@ -152,7 +152,7 @@ def play(board)
     end
 
     if won?(board) != false
-      puts "Congratulations #{winner(board)}"
+      puts "Congratulations #{winner(board[0])}"
     else draw?(board)
       puts "Cat's Game!"
     end
