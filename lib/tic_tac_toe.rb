@@ -152,7 +152,7 @@ def play(board)
       turn(board)
     end
 
-    if won?(board)
+    if won?(board) == true
       if board[won?(board)[0]] == "X"
         puts "Congratulations X!"
       else
